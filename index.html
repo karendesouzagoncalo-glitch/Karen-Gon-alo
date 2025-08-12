@@ -81,4 +81,90 @@
       font-size: 18px;
       color: #d63384;
       text-decoration: none;
-      margin
+      margin: 30px 0;
+    }
+
+    a:hover {
+      color: #ff4fa0;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 25px;
+      font-size: 16px;
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e0559a;
+    }
+
+    #mensagem {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 15px;
+      color: #a6006f;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Karen Gonçalo</h1>
+
+  <p>
+    Olá! Meu nome é Karen, tenho 21 anos e moro em Indaiatuba. Amo cozinhar, praticar vôlei e me aventurar em outros esportes. Meu grande sonho é conhecer a Grécia e explorar sua cultura e paisagens incríveis!
+  </p>
+
+  <button id="btnMensagem">Clique para ver uma mensagem!</button>
+  <div id="mensagem"></div>
+
+  <ul>
+    <li>Cozinhar pratos novos</li>
+    <li>Jogar vôlei</li>
+    <li>Praticar esportes ao ar livre</li>
+  </ul>
+
+  <img class="hobby-img" src="https://images.unsplash.com/photo-1603048290979-3f4bd1df4c83?auto=format&fit=crop&w=800&q=80" alt="Cozinhando" />
+
+  <table>
+    <thead>
+      <tr>
+        <th>País</th>
+        <th>Imagem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Grécia</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg" alt="Grécia" /></td>
+      </tr>
+      <tr>
+        <td>França</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="França" /></td>
+      </tr>
+      <tr>
+        <td>Japão</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Japão" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="https://www.tastemade.com.br/" target="_blank">Veja receitas incríveis no Tastemade 🍰</a>
+
+  <script>
+    const botao = document.getElementById('btnMensagem');
+    const mensagem = document.getElementById('mensagem');
+
+    botao.addEventListener('click', () => {
+      mensagem.textContent = "Seja bem-vinda! Continue brilhando e seguindo seus sonhos, Karen ✨";
+    });
+  </script>
+</body>
+</html>
