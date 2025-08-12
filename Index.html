@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trabalho Fundamentos de Desenvolvimento de Software</title>
+  <style>
+    /* Fundo suave */
+    body {
+      background-color: #f5f7fa;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      color: #333;
+    }
+
+    /* Título centralizado e com cor diferente */
+    h1 {
+      text-align: center;
+      color: #2a7ae2;
+      margin-bottom: 20px;
+    }
+
+    /* Parágrafo justificado e fonte maior */
+    p {
+      font-size: 18px;
+      text-align: justify;
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+    }
+
+    /* Lista com espaçamento maior entre os itens */
+    ul {
+      max-width: 300px;
+      margin: 0 auto 20px auto;
+      padding-left: 20px;
+      line-height: 2;
+    }
+
+    /* Imagem arredondada e tamanho adequado */
+    img.hobby-img {
+      display: block;
+      margin: 0 auto 30px auto;
+      width: 300px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Tabela estilizada */
+    table {
+      margin: 0 auto 30px auto;
+      border-collapse: collapse;
+      width: 60%;
+      max-width: 600px;
+    }
+    table, th, td {
+      border: 1px solid #bbb;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #2a7ae2;
+      color: white;
+    }
+    td img {
+      width: 100px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    }
+
+    /* Link que muda cor no hover */
+    a {
+      color: #2a7ae2;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+    a:hover {
+      color: #ff6347;
+    }
+
+    /* Botão estilizado */
+    button {
+      display: block;
+      margin: 0 auto 15px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2a7ae2;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #1a5bb8;
+    }
+
+    /* Mensagem que aparece após clicar */
+    #mensagem {
+      text-align: center;
+      font-size: 18px;
+      color: #444;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Karen Gonçalo</h1>
+
+  <p>
+    Olá! Meu nome é Karen Gonçalo, tenho 21 anos, moro em O
+Indaiatuba e sou apaixonado por tecnologia e viagens. Gosto de aprender coisas novas e explorar culturas diferentes.
+  </p>
+
+  <button id="btnMensagem">Clique para ver uma mensagem!</button>
+  <div id="mensagem"></div>
+
+  <ul>
+    <li>Ler livros</li>
+    <li>Esportes</li>
+    <li>Viajar</li>
+  </ul>
+
+  <img class="hobby-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Fotografia hobby" />
+
+  <table>
+    <thead>
+      <tr>
+        <th>País</th>
+        <th>Imagem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Japão</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="Bandeira Japão" /></td>
+      </tr>
+      <tr>
+        <td>Itália</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" alt="Bandeira Itália" /></td>
+      </tr>
+      <tr>
+        <td>Canadá</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="Bandeira Canadá" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="https://www.tecmundo.com.br/" target="_blank" rel="noopener noreferrer">Visite o TecMundo - Tecnologia e notícias</a>
+
+  <script>
+    const btn = document.getElementById('btnMensagem');
+    const mensagemDiv = document.getElementById('mensagem');
+
+    btn.addEventListener('click', () => {
+      mensagemDiv.textContent = "Seja bem-vindo(a)! Continue aprendendo e se desenvolvendo sempre!";
+    });
+  </script>
+</body>
+</html>
